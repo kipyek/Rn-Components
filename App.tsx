@@ -1,20 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StyleSheet, Text, View } from 'react-native';
+import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
+import React, { useMemo, useRef } from 'react';
 
-export default function App() {
+const App = () => {
+
+  const bottomSheetRef = useRef<BottomSheet>(null);
+  // variables
+  const snapPoints = useMemo(() => ['24%', '50%', '90%'], []);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <GestureHandlerRootView style={styles.container}>
+      <BottomSheet
+        ref={bottomSheetRef}
+        snapPoints={snapPoints}
+        handleIndicatorStyle={{ width: 35, backgroundColor: 'red' }}
+
+      >
+        <BottomSheetScrollView>
+          <Text>Yes</Text>
+
+        </BottomSheetScrollView>
+      </BottomSheet>
+    </GestureHandlerRootView>
+
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'green',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
+export default App;

@@ -1,39 +1,15 @@
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { StyleSheet, Text, View } from 'react-native';
-import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
-import React, { useMemo, useRef } from 'react';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import BottomSheet from './Screens/BottomSheet'
 
 const App = () => {
-
-  const bottomSheetRef = useRef<BottomSheet>(null);
-  // variables
-  const snapPoints = useMemo(() => ['24%', '50%', '90%'], []);
   return (
-    <GestureHandlerRootView style={styles.container}>
-      <BottomSheet
-        ref={bottomSheetRef}
-        snapPoints={snapPoints}
-        handleIndicatorStyle={{ width: 35, backgroundColor: 'red' }}
 
-      >
-        <BottomSheetScrollView>
-          <Text>Yes</Text>
+    <BottomSheet />
 
-        </BottomSheetScrollView>
-      </BottomSheet>
-    </GestureHandlerRootView>
-
-
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
 
-export default App;
+const styles = StyleSheet.create({})

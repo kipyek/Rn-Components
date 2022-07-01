@@ -1,3 +1,7 @@
+//install expo install react-native-gesture-handler
+//install expo install react-native-reanimated
+// install yarn add @gorhom/bottom-sheet
+//install expo install react-native-safe-area-context
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StyleSheet, Text, View } from 'react-native';
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';

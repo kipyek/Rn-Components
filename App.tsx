@@ -6,7 +6,7 @@ import BottomTabs from './Screens/BottomTabs'
 const App = () => {
   return (
 
-    <BottomTabs />
+    <BottomSheet />
 
   )
 }

@@ -6,7 +6,9 @@ import BottomTabs from './Screens/BottomTabs'
 const App = () => {
   return (
 
-    <BottomSheet />
+    <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1, backgroundColor: 'grey' }}>
+      <Text>Hello!!</Text>
+    </View>
 
   )
 }

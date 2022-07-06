@@ -7,7 +7,7 @@ import OnboardingScreen from './Screens/OnboardingScreen'
 const App = () => {
   return (
 
-    <OnboardingScreen />
+    <BottomTabs />
 
   )
 }

@@ -4,11 +4,12 @@ import BottomSheet from './Screens/BottomSheet'
 import BottomTabs from './Screens/BottomTabs'
 import OnboardingScreen from './Screens/OnboardingScreen'
 import Circles from './Screens/Circles'
+import CountDownCircle from './Screens/CountDownCircle'
 
 const App = () => {
   return (
 
-    <Circles />
+    <CountDownCircle />
 
   )
 }

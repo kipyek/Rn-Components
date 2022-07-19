@@ -5,11 +5,12 @@ import BottomTabs from './Screens/BottomTabs'
 import OnboardingScreen from './Screens/OnboardingScreen'
 import Circles from './Screens/Circles'
 import CountDownCircle from './Screens/CountDownCircle'
+import Graphs from './Screens/Graphs'
 
 const App = () => {
   return (
 
-    <CountDownCircle />
+    <Graphs />
 
   )
 }

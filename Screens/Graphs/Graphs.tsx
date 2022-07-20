@@ -1,7 +1,6 @@
-//Run yarn add react-native-chart-kit
+
 import React from 'react';
 
-// import all the components we are going to use
 import {
   SafeAreaView,
   Text,
@@ -11,7 +10,6 @@ import {
   ScrollView,
 } from 'react-native';
 
-//import React Native chart Kit for different kind of Chart
 import {
   LineChart,
   BarChart,
@@ -298,19 +296,12 @@ const App = () => {
       <ScrollView>
         <View style={styles.container}>
           <View>
-            {/*Example of Bezier LineChart*/}
             <MyBezierLineChart />
-            {/*Example of LineChart*/}
             <MyLineChart />
-            {/*Example of Progress Chart*/}
             <MyProgressChart />
-            {/*Example of Bar Chart*/}
             <MyBarChart />
-            {/*Example of StackedBar Chart*/}
             <MyStackedBarChart />
-            {/*Example of Pie Chart*/}
             <MyPieChart />
-            {/*Example of Contribution Chart*/}
             <MyContributionGraph />
           </View>
         </View>

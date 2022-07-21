@@ -7,11 +7,14 @@ import Circles from './Screens/Circles'
 import CountDownCircle from './Screens/CountDownCircle'
 import Graphs from './Screens/Graphs'
 import Alarm from './Screens/Alarm'
+import Signature from './Screens/Signature'
 
 const App = () => {
   return (
 
-    <Alarm />
+    <Signature text={''} onOK={function (signature: any): void {
+      throw new Error('Function not implemented.')
+    }} />
 
   )
 }

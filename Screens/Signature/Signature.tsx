@@ -42,3 +42,5 @@ const Sign: React.FC<Props> = ({ text, onOK }) => {
 };
 
 export default Sign;
+
+

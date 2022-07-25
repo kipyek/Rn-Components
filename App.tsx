@@ -10,6 +10,7 @@ import Alarm from './Screens/Alarm'
 import Signature from './Screens/Signature'
 import CustomTab from './Screens/CustomTabs'
 import CustomTabs from './Screens/CustomTabs/CustomTabs'
+import CalenderAlarm from './Screens/CalenderAlarm'
 
 const App = () => {
 
@@ -19,18 +20,7 @@ const App = () => {
     setTabSelected(value)
   }
   return (
-    <View style={{ justifyContent: 'center', flex: 1, alignItems: 'center' }}>
-      <CustomTabs
-        selectionMode={1}
-        option1={"New"}
-        option2={"Accepted"}
-        option3={"Ongoing"}
-        option4={"Completed"}
-        onSelectSwitch={onTabSelect}
-      />
-
-      <Text>{tabSelected == 1 ? "This is it" : "This is it part 2"}</Text>
-    </View>
+    <CalenderAlarm />
 
   )
 }

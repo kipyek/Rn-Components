@@ -1,3 +1,4 @@
+//yarn add react-native-alarm-notification
 import React, { Component } from 'react';
 import {
   View,

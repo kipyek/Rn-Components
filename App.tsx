@@ -11,6 +11,8 @@ import Signature from './Screens/Signature'
 import CustomTab from './Screens/CustomTabs'
 import CustomTabs from './Screens/CustomTabs/CustomTabs'
 import CalenderAlarm from './Screens/CalenderAlarm'
+import SimpleAlarm from './Screens/SimpleAlarm'
+import TimeCounter from './Screens/TimeCounter'
 
 const App = () => {
 
@@ -20,7 +22,7 @@ const App = () => {
     setTabSelected(value)
   }
   return (
-    <CalenderAlarm />
+    <TimeCounter />
 
   )
 }
